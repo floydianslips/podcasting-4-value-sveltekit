@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 require('./shims-24e5b259.js');
-var ./server/app.js = require('./server/app.js');
+var server = require('./server/app.js');
 require('node:http');
 require('node:https');
 require('node:zlib');
@@ -17,7 +17,7 @@ require('net');
  * @returns {import('@netlify/functions').Handler}
  */
 function init(manifest) {
-	const app = new ./server/app.js.App(manifest);
+	const app = new server.App(manifest);
 
 	return async (event) => {
 		const rendered = await app.render(to_request(event));
