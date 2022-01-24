@@ -1,25 +1,26 @@
 <script context="module">
-  export const load = async () => {
+	export const load = async () => {
 		const ReadMeFile = await import('../../README.md');
-    const ReadMe = ReadMeFile.default;
+		const ReadMe = ReadMeFile.default;
 
 		return {
 			props: {
 				ReadMe
 			}
-		}
-	}
+		};
+	};
 </script>
 
 <script>
-  export let ReadMe
+	import PodcastPlayer from '$lib/components/PodcastPlayer.svelte';
+
+	export let ReadMe;
 </script>
 
-
 <svelte:head>
-	<title>SvelteKit Static Blog Starter</title>
+	<title>Podcasting 4 Value</title>
 </svelte:head>
 
-
-<svelte:component this={ReadMe} />
+<PodcastPlayer />
+<!-- <svelte:component this={ReadMe} /> -->
 <!-- This is the README.md file in the root of the repo. It serves double duty as the homepage's content. If you'd rather use your own HTML and/or Svelte, you can delete/modify everything above this line. -->
