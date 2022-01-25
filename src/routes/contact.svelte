@@ -9,7 +9,7 @@
 <h1>Contact</h1>
 
 <form name="contact" method="post" netlify data-netlify-recaptcha="true">
-	<input type="hidden" name="form-name" value="contact" />
+	<!-- <input type="hidden" name="form-name" value="contact" /> -->
 	<!-- <input type="text" name="bot-field" /> -->
 	<div class="form-section">
 		<label>Your Name: <input type="text" name="name" /></label>
