@@ -56,5 +56,5 @@
     <label for="c1">Sign me up for something!</label>
   </div> -->
 
-	<input type="submit" value="Do nothing!" />
+	<button type="submit">Send</button>
 </form>
