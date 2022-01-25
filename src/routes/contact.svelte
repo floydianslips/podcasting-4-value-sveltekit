@@ -2,21 +2,29 @@
 	export const prerender = true;
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+	<title>Contact</title>
+</svelte:head>
+<h1>Contact</h1>
 
-<form name="test" method="post" netlify netlify-honeypot="bot-field">
-	<input type="hidden" name="form-name" value="test" />
-	<input type="text" name="bot-field" />
-	<p>
+<form
+	name="contact"
+	method="post"
+	netlify
+	netlify-honeypot="bot-field"
+	data-netlify-recaptcha="true"
+>
+	<input type="hidden" name="contact" value="contact" />
+	<!-- <input type="text" name="bot-field" /> -->
+	<div class="form-section">
 		<label>Your Name: <input type="text" name="name" /></label>
-	</p>
-	<p>
+	</div>
+	<div class="form-section">
 		<label>Your Email: <input type="email" name="email" /></label>
-	</p>
-	<p>
+	</div>
+	<div class="form-section">
 		<label>Message: <textarea name="message" /></label>
-	</p>
+	</div>
 	<p>
 		<button type="submit">Send</button>
 	</p>
