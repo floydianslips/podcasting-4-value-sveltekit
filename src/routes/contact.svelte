@@ -27,10 +27,10 @@
 		<input type="email" id="email" placeholder="Email address" />
 	</div>
 
-	<div class="form-section">
+	<!-- <div class="form-section">
 		<label for="message">Message</label>
 		<input type="message" id="message" placeholder="What's up?" />
-	</div>
+	</div> -->
 	<!-- 
   <fieldset>
     <legend>
