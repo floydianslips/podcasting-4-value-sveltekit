@@ -17,6 +17,8 @@
 	data-netlify-recaptcha="true"
 	data-netlify="true"
 >
+	<input type="hidden" name="contact" value="p4v-contact" />
+
 	<div class="form-section">
 		<label for="name">Name</label>
 		<input type="text" id="name" placeholder="First name" />
