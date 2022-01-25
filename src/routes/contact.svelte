@@ -5,6 +5,7 @@
 <svelte:head>
 	<title>Contact</title>
 </svelte:head>
+
 <h1>Contact</h1>
 
 <form
@@ -14,7 +15,7 @@
 	netlify-honeypot="bot-field"
 	data-netlify-recaptcha="true"
 >
-	<input type="hidden" name="contact" value="contact" />
+	<input type="hidden" name="p4v-contact" value="contact" />
 	<!-- <input type="text" name="bot-field" /> -->
 	<div class="form-section">
 		<label>Your Name: <input type="text" name="name" /></label>
