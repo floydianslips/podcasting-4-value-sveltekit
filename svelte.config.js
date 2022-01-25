@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
 import preprocess from 'svelte-preprocess';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
