@@ -14,7 +14,7 @@
 <script>
 	import PodcastPlayer from '$lib/components/PodcastPlayer.svelte';
 
-	export let ReadMe;
+	export const ReadMe;
 </script>
 
 <svelte:head>
