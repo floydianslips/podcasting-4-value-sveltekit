@@ -10,13 +10,7 @@
 
 <Callout>What's on your mind?</Callout>
 
-<form
-	on:submit|preventDefault
-	name="contact"
-	method="POST"
-	data-netlify-recaptcha="true"
-	data-netlify="true"
->
+<form on:submit|preventDefault name="contact" method="POST">
 	<div class="form-section">
 		<label for="name">Name</label>
 		<input type="text" id="name" placeholder="First name" />
@@ -27,10 +21,10 @@
 		<input type="email" id="email" placeholder="Email address" />
 	</div>
 
-	<!-- <div class="form-section">
+	<div class="form-section">
 		<label for="message">Message</label>
-		<input type="message" id="message" placeholder="What's up?" />
-	</div> -->
+		<input type="text" id="message" placeholder="What's up?" />
+	</div>
 	<!-- 
   <fieldset>
     <legend>
