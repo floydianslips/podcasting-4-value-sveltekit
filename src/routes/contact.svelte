@@ -10,7 +10,7 @@
 
 <Callout>What's on your mind?</Callout>
 
-<form on:submit|preventDefault name="contact" data-netlify-recaptcha="true" netlify>
+<form name="contact" data-netlify-recaptcha="true" netlify>
 	<!-- <input type="hidden" name="contact" value="p4v-contact" /> -->
 
 	<div class="form-section">
