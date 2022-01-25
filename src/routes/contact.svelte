@@ -8,13 +8,7 @@
 
 <h1>Contact</h1>
 
-<form
-	name="contact"
-	method="post"
-	netlify
-	netlify-honeypot="bot-field"
-	data-netlify-recaptcha="true"
->
+<form name="contact" method="post" netlify data-netlify-recaptcha="true">
 	<input type="hidden" name="form-name" value="contact" />
 	<!-- <input type="text" name="bot-field" /> -->
 	<div class="form-section">
