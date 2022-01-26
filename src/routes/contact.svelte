@@ -2,22 +2,19 @@
 	export const prerender = true;
 </script>
 
-<svelte:head>
-	<title>Contact</title>
-</svelte:head>
-
-<h1>Contact</h1>
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 <form name="contact" method="post" netlify netlify-honeypot="bot-field">
 	<input type="hidden" name="form-name" value="contact" />
 	<!-- <input type="text" name="bot-field" /> -->
-	<p class="form-section">
+	<p>
 		<label>Your Name: <input type="text" name="name" /></label>
 	</p>
-	<p class="form-section">
+	<p>
 		<label>Your Email: <input type="email" name="email" /></label>
 	</p>
-	<p class="form-section">
+	<p>
 		<label>Message: <textarea name="message" /></label>
 	</p>
 	<p>
