@@ -10,13 +10,7 @@
 
 <Callout>What's on your mind?</Callout>
 
-<form
-	name="contact"
-	method="post"
-	netlify
-	netlify-honeypot="bot-field"
-	data-netlify-recaptcha="true"
->
+<form name="contact" method="post" netlify netlify-honeypot="bot-field">
 	<input type="hidden" name="form-name" value="contact" />
 	<!-- <input type="text" name="bot-field" /> -->
 	<div class="form-section">
