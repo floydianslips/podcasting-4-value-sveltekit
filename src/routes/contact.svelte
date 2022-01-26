@@ -2,22 +2,27 @@
 	export const prerender = true;
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Callout from '$lib/components/Callout.svelte';
+</script>
+
+<h1>Contact</h1>
+
+<Callout>What's on your mind?</Callout>
 
 <form name="contact" method="post" netlify netlify-honeypot="bot-field">
 	<input type="hidden" name="form-name" value="contact" />
 	<!-- <input type="text" name="bot-field" /> -->
-	<p>
+	<div class="form-section">
 		<label>Your Name: <input type="text" name="name" /></label>
-	</p>
-	<p>
+	</div>
+	<div class="form-section">
 		<label>Your Email: <input type="email" name="email" /></label>
-	</p>
-	<p>
+	</div>
+	<div class="form-section">
 		<label>Message: <textarea name="message" /></label>
-	</p>
-	<p>
+	</div>
+	<div class="form-section">
 		<button type="submit">Send</button>
-	</p>
+	</div>
 </form>
