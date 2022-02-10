@@ -3,7 +3,7 @@ import { mdsvex } from 'mdsvex';
 import preprocess from 'svelte-preprocess';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
-
+import adapter_ipfs from 'sveltejs-adapter-ipfs';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Ensures both .svelte and .md files are treated as components (can be imported and used anywhere, or  used as pages)
@@ -28,9 +28,11 @@ const config = {
 	kit: {
 		// Default SvelteKit options
 		target: '#svelte',
-		adapter: adapter({
-			split: false
-		}),
+		adapter: adapter_ipfs(),
+
+		// adapter: adapter({
+		// split: false
+		// }),
 
 		// Allows reading from files in the root directory. Necessary for loading the README on the homepage, but nothing else.
 		vite: {
