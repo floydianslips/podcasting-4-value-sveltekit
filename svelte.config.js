@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-netlify';
+// import adapter from '@sveltejs/adapter-netlify';
 import { mdsvex } from 'mdsvex';
 import preprocess from 'svelte-preprocess';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -26,12 +26,16 @@ const config = {
 	],
 
 	kit: {
+		adapter: adapter_ipfs({
+			removeBuiltInServiceWorkerRegistration: true,
+			injectPagesInServiceWorker: true,
+			split: false
+		}),
 		// Default SvelteKit options
-		target: '#svelte',
-		adapter: adapter_ipfs(),
+		// target: '#svelte',
 
 		// adapter: adapter({
-		// split: false
+		// 	split: false
 		// }),
 
 		// Allows reading from files in the root directory. Necessary for loading the README on the homepage, but nothing else.
