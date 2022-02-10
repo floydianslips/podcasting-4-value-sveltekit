@@ -4,7 +4,13 @@
 
 <script>
 	import Callout from '$lib/components/Callout.svelte';
+	import { siteDescription } from '$lib/config';
 </script>
+
+<svelte:head>
+	<title>Contact</title>
+	<meta data-key="description" name="description" content={siteDescription} />
+</svelte:head>
 
 <h1>Contact</h1>
 

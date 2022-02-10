@@ -1,3 +1,7 @@
+<script>
+	import { fly } from 'svelte/transition';
+</script>
+
 <iframe
 	src="https://widget.justcast.com/widget?rss=https://filedn.com/l0rngxCNDKAhHBs9WFEP7Dj/rss/p4vrss.xml&primaryBackgroundColor=0c1824&primaryButtonColor=f7f8f9&primaryTextColor=f7f8f9&progressBarFilledColor=f7f8f9&progressBarBackgroundColor=8A8175&playlistBackgroundColor=30343c&playlistTextColor=f7f8f9&chapterBackgroundColor=30343c&chapterTextColor=f7f8f9"
 	title="Podcasting 4 Value"
@@ -19,5 +23,6 @@
 		height: 20vh;
 		width: 72vw;
 		margin: 25px;
+		align-items: center;
 	}
 </style>

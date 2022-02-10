@@ -90,6 +90,11 @@
     sade "^1.7.4"
     vite "^2.7.2"
 
+"@sveltejs/svelte-scroller@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@sveltejs/svelte-scroller/-/svelte-scroller-2.0.7.tgz#1d20bced6d101efe623cbd5b7242cbcbef11f124"
+  integrity sha512-GuVePK4S0ubUJVYw2ixO1/8AVa792rNlhORXLeb2z7JHRKTqxOvg8Ye7sb4nZry/stgZEOlCpDV9qJeqHQKesw==
+
 "@sveltejs/vite-plugin-svelte@^1.0.0-next.32":
   version "1.0.0-next.35"
   resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.35.tgz#a7e274438b3600e00c80009448f8e674584d0779"
