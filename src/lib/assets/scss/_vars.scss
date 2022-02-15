@@ -14,37 +14,39 @@ $xxlMax: 1959px;
 $xxxlMin: 1960px;
 
 :root {
-  // Colors
-  --accent: #E63946;
-  --background: #F1FAEE;
-  --lightAccent: #A8DADC;
-  --lighterAccent: #E6E8E4;
-  --dark: #457B9D;
-  --darker: #1D3557;
-  --slate: #2F3948;
+	// Colors
+	--accent: #e63946;
+	--background: #f1faee;
+	--lightAccent: #a8dadc;
+	--lighterAccent: #e6e8e4;
+	--dark: #457b9d;
+	--darker: #1d3557;
+	--slate: #2f3948;
+	--green: #59981a;
+	--brightGreen: #04d010;
+	--darkBlue: #063340;
+	--teal: #088280;
 
+	--white: #fff;
+	--black: #152030;
 
-  --white: #fff;
-  --black: #152030;
+	--ink: var(--slate);
+	--paper: var(--background);
 
-  --ink: var(--slate);
-  --paper: var(--background);
-  
+	// Fonts
+	--accentFont: 'Source Serif Pro', Georgia, Times, serif;
+	--primaryFont: 'Source Sans Pro', sans-serif;
+	--codeFont: 'Fira Code', monospace;
 
-  // Fonts
-  --accentFont: 'Source Serif Pro', Georgia, Times, serif; 
-  --primaryFont: 'Source Sans Pro', sans-serif;
-  --codeFont: 'Fira Code', monospace;
+	// Base styles
+	font-size: 1rem;
+	line-height: 1.6;
 
-  // Base styles
-  font-size: 1rem;
-  line-height: 1.6;
+	@media (min-width: $smMin) {
+		font-size: 1.125rem;
+	}
 
-  @media (min-width: $smMin) {
-    font-size: 1.125rem;
-  }
-
-  @media (min-width: $lgMin) {
-    font-size: 1.25rem;
-  }
+	@media (min-width: $lgMin) {
+		font-size: 1.25rem;
+	}
 }

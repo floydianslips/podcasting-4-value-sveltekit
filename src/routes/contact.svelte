@@ -1,56 +1,34 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
 <script>
 	import Callout from '$lib/components/Callout.svelte';
+	import { siteDescription } from '$lib/config';
 </script>
 
 <svelte:head>
 	<title>Contact</title>
+	<meta data-key="description" name="description" content={siteDescription} />
 </svelte:head>
 
 <h1>Contact</h1>
-<Callout>Fill out your information. I look forward to hearing from you.</Callout>
-<form
-	on:submit|preventDefault
-	name="contact"
-	method="post"
-	data-netlify="true"
-	netlify-honeypot="bot-field"
-	data-netlify-recaptcha="true"
->
-	<div class="form-section">
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="First name" />
-	</div>
 
+<Callout>What's on your mind?</Callout>
+
+<form name="contact" method="post" netlify netlify-honeypot="bot-field">
+	<input type="hidden" name="form-name" value="contact" />
+	<!-- <input type="text" name="bot-field" /> -->
 	<div class="form-section">
-		<label for="email">Email</label>
-		<input type="email" id="email" placeholder="Email address" />
+		<label>Your Name: <input type="text" name="name" /></label>
 	</div>
 	<div class="form-section">
-		<label for="message">Message</label>
-		<input name="message" placeholder="What's on our mind?" />
+		<label>Your Email: <input type="email" name="email" /></label>
 	</div>
-	<div data-netlify-recaptcha="true" />
-	<!-- <fieldset>
-		<legend> Which option? </legend>
-
-		<div>
-			<input type="radio" name="s" id="s1" value="s1" />
-			<label for="s1">Option 1</label>
-		</div>
-		<div>
-			<input type="radio" name="s" id="s2" value="s2" />
-			<label for="s2">Option 2</label>
-		</div>
-		<div>
-			<input type="radio" name="s" id="s3" value="s3" />
-			<label for="s3">Option 3</label>
-		</div>
-	</fieldset> -->
-
-	<!-- <div class="form-section"> -->
-	<!-- <input type="checkbox" id="c1" /> -->
-	<!-- <label for="c1">Sign me up for something!</label> -->
-	<!-- </div> -->
-
-	<input type="submit" value="Send" />
+	<div class="form-section">
+		<label>Message: <textarea name="message" /></label>
+	</div>
+	<div class="form-section">
+		<button type="submit">Send</button>
+	</div>
 </form>
