@@ -1,5 +1,5 @@
 ---
-date: 2022-02-16T23:19:33.733Z
+date: 02/16/2022
 updated: ""
 coverImage: /uploads/podcasting4value-lg.png
 coverWidth: 16
