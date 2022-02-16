@@ -20,6 +20,7 @@
 <svelte:head>
 	<title>Home</title>
 	<meta data-key="description" name="description" content={siteDescription} />
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
 
 <div class="main-div">
