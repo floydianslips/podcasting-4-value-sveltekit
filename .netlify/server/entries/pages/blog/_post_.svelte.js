@@ -2,11 +2,11 @@ import { c as create_ssr_component, g as escape, d as add_attribute, v as valida
 function __variableDynamicImportRuntime0__(path) {
   switch (path) {
     case "../../lib/posts/heading-links-example.md":
-      return import("../../../chunks/heading-links-example-0aa2c4f0.js");
+      return import("../../../chunks/heading-links-example-021e5e15.js");
     case "../../lib/posts/mdsvex-component-example.md":
-      return import("../../../chunks/mdsvex-component-example-ce2c5870.js");
+      return import("../../../chunks/mdsvex-component-example-f59ab75d.js");
     case "../../lib/posts/syntax-highlighting-example.md":
-      return import("../../../chunks/syntax-highlighting-example-6a085818.js");
+      return import("../../../chunks/syntax-highlighting-example-3c01966e.js");
     default:
       return new Promise(function(resolve, reject) {
         (typeof queueMicrotask === "function" ? queueMicrotask : setTimeout)(reject.bind(null, new Error("Unknown variable dynamic import: " + path)));

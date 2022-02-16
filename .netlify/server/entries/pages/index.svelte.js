@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
   window.addEventListener("resize", run_all);
 }
 if (typeof IntersectionObserver !== "undefined") {
-  const map = new Map();
+  const map = /* @__PURE__ */ new Map();
   new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       const update = map.get(entry.target);

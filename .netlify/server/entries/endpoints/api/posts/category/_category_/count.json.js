@@ -1,4 +1,4 @@
-import { f as fetchPosts } from "../../../../../../chunks/fetchPosts-9b291f21.js";
+import { f as fetchPosts } from "../../../../../../chunks/fetchPosts-6f68257d.js";
 import "../../../../../../chunks/config-52afe4d0.js";
 const get = async ({ params }) => {
   const { category } = params;
