@@ -16,11 +16,13 @@ collections:
       - label: 'Published'
         name: 'date'
         widget: 'datetime'
+        date_format: 'YYYY.MM.DD'
       - label: 'Updated'
         name: 'updated'
         default: ''
         required: false
         widget: 'datetime'
+        date_format: 'YYYY.MM.DD'
       - label: 'Featured Image'
         name: 'coverImage'
         widget: 'image'
