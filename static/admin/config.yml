@@ -8,15 +8,34 @@ collections:
   - name: 'posts'
     label: 'Posts'
     label_singular: 'Post'
-    folder: '/posts/'
+    folder: '/src/lib/posts/'
     create: true
     slug: '{{slug}}'
     preview_path: 'blog/{{slug}}'
     fields:
+      - label: 'Published'
+        name: 'date'
+        widget: 'datetime'
+      - label: 'Updated'
+        name: 'updated'
+        default: ''
+        required: false
+        widget: 'datetime'
       - label: 'Featured Image'
-        name: 'thumbnail'
+        name: 'coverImage'
         widget: 'image'
         required: false
+      - label: 'Image Width'
+        name: 'coverWidth'
+        widget: 'number'
+        default: 16
+      - label: 'Image Height'
+        name: 'coverHeight'
+        widget: 'number'
+        default: 9
+      - label: 'Excerpt'
+        name: 'excerpt'
+        widget: 'string'
       - label: 'Title'
         name: 'title'
         widget: 'string'

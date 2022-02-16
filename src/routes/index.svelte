@@ -32,7 +32,7 @@
 			<section>
 				{#if offset > -0.01 && index == 0}
 					<article in:fly={{ duration: 1000, x: -500 }} out:fly={{ duration: 1000, x: 500 }}>
-						<SingleBlogPost index={2} />
+						<SingleBlogPost index={0} />
 					</article>
 				{/if}
 			</section>
@@ -52,10 +52,6 @@
 			</section>
 		</div>
 	</Scroller>
-
-	<!-- <DraggableLabel bind:value={top} label="top" />
-	<DraggableLabel bind:value={threshold} label="threshold" />
-	<DraggableLabel bind:value={bottom} label="bottom" /> -->
 </div>
 
 <style>
