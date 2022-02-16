@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+
+publish_mode: editorial_workflow
+media_folder: static/uploads
+public_folder: /uploads
+# Make sure to change these before publishing
+site_url: https://example.com
+display_url: https://example.com
+logo_url: https://via.placeholder.com/300x125?text=Example
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    label_singular: 'Post'
+    folder: 'content/blog'
+    create: true
+    slug: '{{slug}}'
+    preview_path: 'blog/{{slug}}'
+    fields:
+      - label: 'Featured Image'
+        name: 'thumbnail'
+        widget: 'image'
+        required: false
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
