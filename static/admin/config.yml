@@ -17,8 +17,10 @@ collections:
         name: 'date'
         widget: 'datetime'
         date_format: 'YYYY.MM.DD'
+        format: 'L'
       - label: 'Updated'
         name: 'updated'
+        format: 'L'
         default: ''
         required: false
         widget: 'datetime'
