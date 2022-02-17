@@ -1,6 +1,7 @@
 <script>
 	import SvelteTable from 'svelte-table';
 	import { cryptoInfo } from '$lib/cryptoInfo';
+	import { siteDescription } from '$lib/config';
 
 	const rows = cryptoInfo;
 
@@ -53,4 +54,8 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Donate</title>
+	<meta data-key="description" name="description" content={siteDescription} />
+</svelte:head>
 <SvelteTable {columns} {rows} classNameTable={['donation-table']} />

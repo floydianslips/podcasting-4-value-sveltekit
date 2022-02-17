@@ -4,7 +4,7 @@
 
 <script>
 	import Callout from '$lib/components/Callout.svelte';
-	import { siteDescription } from '$lib/config';
+	import { siteDescription, siteEmail } from '$lib/config';
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
 <Callout
 	>What's on your mind?
 	<div class="email">
-		<a href="mailto:fjeiofjeiofsji">podcasting4value@protonmail.com</a>
+		<a href="mailto:{siteEmail}">podcasting4value@protonmail.com</a>
 	</div>
 </Callout>
 
