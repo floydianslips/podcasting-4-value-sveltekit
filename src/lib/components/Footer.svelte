@@ -9,8 +9,8 @@
 	<nav>
 		<ul>
 			<!-- <li>
-        <a href="/api/rss.xml" rel="external">RSS</a>
-      </li> -->
+				<a href="/api/rss.xml" rel="external">RSS</a>
+			</li> -->
 			<li>
 				<a href="/">Home</a>
 			</li>
