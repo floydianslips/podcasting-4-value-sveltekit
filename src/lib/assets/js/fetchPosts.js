@@ -8,7 +8,6 @@ const fetchPosts = async ({ offset = 0, limit = postsPerPage, category = '' } = 
 			return { ...metadata, slug };
 		})
 	);
-	console.log(posts);
 
 	let sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 

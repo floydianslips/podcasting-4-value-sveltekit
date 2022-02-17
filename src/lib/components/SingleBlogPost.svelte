@@ -8,9 +8,7 @@
 			.then((res) => res.json())
 			.then((data) => {
 				posts = data.posts;
-				console.log('slug', posts[0]?.date);
-			})
-			.then(() => console.log('fetsch', posts.posts));
+			});
 		fetch(`/api/posts/count.json`)
 			.then((res) => res.json())
 			.then((data) => {
@@ -18,19 +16,7 @@
 			});
 	});
 
-	import PostsList from '$lib/components/PostsList.svelte';
-	import Pagination from '$lib/components/Pagination.svelte';
-	import Scroller from '@sveltejs/svelte-scroller';
-
 	import { siteDescription } from '$lib/config';
-	import Visibility from './Visibility.svelte';
-	import { fly } from 'svelte/transition';
-	function getStyle(percent) {
-		return `
-          opacity: ${percent / 100};
-          transform: fade(${percent * 100}deg) ;
-      `;
-	}
 	export let index;
 </script>
 
@@ -50,10 +36,7 @@
 <div>
 	<p>{posts[index]?.excerpt}</p>
 </div>
-<!-- {/each} -->
-<!-- </div> -->
 
-<!-- </Scroller> -->
 <style>
 	article {
 		display: grid;

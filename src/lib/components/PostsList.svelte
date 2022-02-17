@@ -1,6 +1,5 @@
 <script>
 	export let posts = [];
-	console.log('list', posts);
 </script>
 
 <ul class="posts-list">
