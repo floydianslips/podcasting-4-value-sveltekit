@@ -1,5 +1,5 @@
 <script>
-	import { navItems } from '$lib/config';
+	import { navItems, siteEmail } from '$lib/config';
 	import { isMenuOpen } from '$lib/assets/js/store';
 	import NavItem from './NavItem.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';

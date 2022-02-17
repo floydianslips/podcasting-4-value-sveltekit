@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as each, g as escape } from "../../../../chunks/index-44b51311.js";
+import { c as create_ssr_component, f as each, g as escape } from "../../../../chunks/index-4fee9b32.js";
 const load = async ({ fetch }) => {
   const res = await fetch(`/api/posts.json`);
   let { posts } = await res.json();

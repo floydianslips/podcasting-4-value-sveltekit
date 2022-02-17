@@ -14,7 +14,12 @@
 
 <h1>Contact</h1>
 
-<Callout>What's on your mind?</Callout>
+<Callout
+	>What's on your mind?
+	<div class="email">
+		<a href="mailto:fjeiofjeiofsji">podcasting4value@protonmail.com</a>
+	</div>
+</Callout>
 
 <form name="contact" method="post" netlify netlify-honeypot="bot-field">
 	<input type="hidden" name="form-name" value="contact" />

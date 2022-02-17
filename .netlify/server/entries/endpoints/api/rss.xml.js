@@ -1,6 +1,6 @@
-import { s as siteTitle, a as siteDescription, b as siteLink, c as siteURL } from "../../../chunks/config-52afe4d0.js";
+import { s as siteTitle, a as siteDescription, b as siteLink, c as siteURL } from "../../../chunks/config-b9ab5e02.js";
 const get = async () => {
-  const data = await Promise.all(Object.entries({ "../../lib/posts/heading-links-example.md": () => import("../../../chunks/heading-links-example-021e5e15.js"), "../../lib/posts/mdsvex-component-example.md": () => import("../../../chunks/mdsvex-component-example-f59ab75d.js"), "../../lib/posts/syntax-highlighting-example.md": () => import("../../../chunks/syntax-highlighting-example-3c01966e.js") }).map(async ([path, page]) => {
+  const data = await Promise.all(Object.entries({ "../../lib/posts/added-new-netlify-cms.md": () => import("../../../chunks/added-new-netlify-cms-fb469ce3.js"), "../../lib/posts/heading-links-example.md": () => import("../../../chunks/heading-links-example-b9f4cd78.js"), "../../lib/posts/mdsvex-component-example.md": () => import("../../../chunks/mdsvex-component-example-61ba3f85.js"), "../../lib/posts/syntax-highlighting-example.md": () => import("../../../chunks/syntax-highlighting-example-59d1c06d.js") }).map(async ([path, page]) => {
     const { metadata } = await page();
     const slug = path.split("/").pop().split(".").shift();
     return { ...metadata, slug };

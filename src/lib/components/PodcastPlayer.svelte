@@ -5,16 +5,14 @@
 	height="100vh"
 	frameborder="0"
 	scrolling="yes"
-	seamless={true}
 />
 
-<!-- class="block border-0 w-full h-full m-8" -->
 <style>
 	iframe {
 		display: block;
 		/* opacity: 80%; */
 		border: 3px solid var(--green);
-		/* border-radius: 20px; */
+		border-radius: 20px;
 		height: 20vh;
 		width: 72vw;
 		margin: 25px;

@@ -1,5 +1,5 @@
-import { c as create_ssr_component, d as add_attribute, g as escape, v as validate_component } from "../../chunks/index-44b51311.js";
-import { a as siteDescription } from "../../chunks/config-52afe4d0.js";
+import { c as create_ssr_component, d as add_attribute, g as escape, v as validate_component } from "../../chunks/index-4fee9b32.js";
+import { a as siteDescription } from "../../chunks/config-b9ab5e02.js";
 var Scroller_svelte_svelte_type_style_lang = "";
 const css$3 = {
   code: "svelte-scroller-outer.svelte-xdbafy{display:block;position:relative}svelte-scroller-background.svelte-xdbafy{display:block;position:relative;width:100%}svelte-scroller-foreground.svelte-xdbafy{display:block;position:relative;z-index:2}svelte-scroller-foreground.svelte-xdbafy::after{content:' ';display:block;clear:both}svelte-scroller-background-container.svelte-xdbafy{display:block;position:absolute;width:100%;max-width:100%;pointer-events:none;will-change:transform}",
@@ -82,7 +82,6 @@ const Scroller = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 	<svelte-scroller-foreground class="${"svelte-xdbafy"}"${add_attribute("this", foreground, 0)}>${slots.foreground ? slots.foreground({}) : ``}</svelte-scroller-foreground>
 </svelte-scroller-outer>`;
 });
-var DraggableLabel_svelte_svelte_type_style_lang = "";
 var SingleBlogPost_svelte_svelte_type_style_lang = "";
 const css$2 = {
   code: "article.svelte-t5kctk{display:grid;grid-template-columns:1fr 3fr;align-items:center}h3.svelte-t5kctk{padding:0px;margin:0px;color:var(--green)}img.svelte-t5kctk{width:10rem;padding-right:1rem;height:auto}p.svelte-t5kctk{text-align:center}",
@@ -97,34 +96,23 @@ const SingleBlogPost = create_ssr_component(($$result, $$props, $$bindings, slot
   $$result.css.add(css$2);
   return `${$$result.head += `${$$result.title = `<title>Blog</title>`, ""}<meta data-key="${"description"}" name="${"description"}"${add_attribute("content", siteDescription, 0)} data-svelte="svelte-1t9o4xr">`, ""}
 
-
-
-
-
-
-
 <a href="${"/blog/" + escape(posts[index]?.slug)}"><article class="${"svelte-t5kctk"}"><img${add_attribute("src", posts[index]?.coverImage, 0)} alt="${""}"${add_attribute("height", imgWidth, 0)} class="${"svelte-t5kctk"}">
 		<h3 class="${"svelte-t5kctk"}">${escape(posts[index]?.title)}</h3></article></a>
-<div><p class="${"svelte-t5kctk"}">${escape(posts[index]?.excerpt)}</p></div>
-
-
-
-`;
+<div><p class="${"svelte-t5kctk"}">${escape(posts[index]?.excerpt)}</p>
+</div>`;
 });
 var PodcastPlayer_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "iframe.svelte-yfnheg{display:block;opacity:80%;border:none;height:20vh;width:72vw;margin:25px;align-items:center}",
+  code: "iframe.svelte-157455p{display:block;border:3px solid var(--green);border-radius:20px;height:20vh;width:72vw;margin:25px;align-items:center}",
   map: null
 };
 const PodcastPlayer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<iframe src="${"https://widget.justcast.com/widget?rss=https://filedn.com/l0rngxCNDKAhHBs9WFEP7Dj/rss/p4vrss.xml&primaryBackgroundColor=0c1824&primaryButtonColor=f7f8f9&primaryTextColor=f7f8f9&progressBarFilledColor=f7f8f9&progressBarBackgroundColor=8A8175&playlistBackgroundColor=30343c&playlistTextColor=f7f8f9&chapterBackgroundColor=30343c&chapterTextColor=f7f8f9"}" title="${"Podcasting 4 Value"}" width="${"100vw"}" height="${"100vh"}" frameborder="${"0"}" scrolling="${"yes"}"${add_attribute("seamless", true, 0)} class="${"rounded-lg svelte-yfnheg"}"></iframe>
-
-`;
+  return `<iframe src="${"https://widget.justcast.com/widget?rss=https://filedn.com/l0rngxCNDKAhHBs9WFEP7Dj/rss/p4vrss.xml&primaryBackgroundColor=0c1824&primaryButtonColor=f7f8f9&primaryTextColor=f7f8f9&progressBarFilledColor=f7f8f9&progressBarBackgroundColor=8A8175&playlistBackgroundColor=30343c&playlistTextColor=f7f8f9&chapterBackgroundColor=30343c&chapterTextColor=f7f8f9"}" title="${"Podcasting 4 Value"}" width="${"100vw"}" height="${"100vh"}" frameborder="${"0"}" scrolling="${"yes"}" class="${"svelte-157455p"}"></iframe>`;
 });
 var index_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".main-div.svelte-kdxrzl.svelte-kdxrzl{display:grid;justify-items:center}h1.svelte-kdxrzl.svelte-kdxrzl{font-size:1.5rem;text-align:center}[slot='foreground'].svelte-kdxrzl section.svelte-kdxrzl{pointer-events:all}.scroller-div.svelte-kdxrzl.svelte-kdxrzl{width:100%}section.svelte-kdxrzl.svelte-kdxrzl{display:grid;width:100%;align-items:center;height:30vh;background-color:var(--darkBlue);color:white;padding:1em;margin:0 0 2em 0;overflow-x:hidden}",
+  code: ".main-div.svelte-p5hk3g.svelte-p5hk3g{display:grid;justify-items:center}h1.svelte-p5hk3g.svelte-p5hk3g{font-size:1.5rem;text-align:center;margin:0 0 1rem 0}[slot='foreground'].svelte-p5hk3g section.svelte-p5hk3g{pointer-events:all}.scroller-div.svelte-p5hk3g.svelte-p5hk3g{width:100%}.section-1.svelte-p5hk3g.svelte-p5hk3g{background-image:url('../images/laptop-microphone.jpg')}.section-2.svelte-p5hk3g.svelte-p5hk3g{background-image:url('../images/sat-dish.jpg')}.section-3.svelte-p5hk3g.svelte-p5hk3g{background-image:url('../images/mixer.jpg')}article.svelte-p5hk3g.svelte-p5hk3g{display:grid;background-color:rgb(0, 0, 0);background-color:rgba(0, 0, 0, 0.8);color:white;font-weight:bold;border:3px solid #f1f1f1;height:fit-content;overflow-y:hidden;padding:20px;text-align:center}.scroller-div.svelte-p5hk3g.svelte-p5hk3g{z-index:1}section.svelte-p5hk3g.svelte-p5hk3g{display:grid;width:100%;align-items:center;height:40vh;background-color:var(--darkBlue);color:white;padding:1em;background-size:cover;background-position:center;overflow-x:hidden;color:white;font-weight:bold;border:3px solid #f1f1f1;padding:20px;text-align:center}",
   map: null
 };
 let top = 0.1;
@@ -140,9 +128,9 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = `${$$result.head += `${$$result.title = `<title>Home</title>`, ""}<meta data-key="${"description"}" name="${"description"}"${add_attribute("content", siteDescription, 0)} data-svelte="svelte-9uvpfo">`, ""}
+    $$rendered = `${$$result.head += `${$$result.title = `<title>Home</title>`, ""}<meta data-key="${"description"}" name="${"description"}"${add_attribute("content", siteDescription, 0)} data-svelte="svelte-129ocvh"><script src="${"https://identity.netlify.com/v1/netlify-identity-widget.js"}" data-svelte="svelte-129ocvh"><\/script>`, ""}
 
-<div class="${"main-div svelte-kdxrzl"}"><h1 class="${"svelte-kdxrzl"}">One idiot&#39;s attempt at starting a Value 4 Value podcast.</h1>
+<div class="${"main-div svelte-p5hk3g"}"><h1 class="${"svelte-p5hk3g"}">One idiot&#39;s attempt at starting a Value 4 Value podcast.</h1>
 	${validate_component(PodcastPlayer, "PodcastPlayer").$$render($$result, {}, {}, {})}
 
 	${validate_component(Scroller, "Scroller").$$render($$result, {
@@ -172,13 +160,11 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       }
     }, {
       foreground: () => {
-        return `<div class="${"scroller-div svelte-kdxrzl"}" slot="${"foreground"}"><section class="${"svelte-kdxrzl"}">${offset > -0.01 && index == 0 ? `<article>${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 2 }, {}, {})}</article>` : ``}</section>
-			<section class="${"svelte-kdxrzl"}">${offset > -0.01 && index == 1 ? `<article>${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 1 }, {}, {})}</article>` : ``}</section>
-			<section class="${"svelte-kdxrzl"}">${offset > -0.01 && index == 2 ? `<article>${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 2 }, {}, {})}</article>` : ``}</section></div>`;
+        return `<div class="${"scroller-div svelte-p5hk3g"}" slot="${"foreground"}"><section class="${"section-1 svelte-p5hk3g"}">${offset > -0.01 && index == 0 ? `<article class="${"svelte-p5hk3g"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 0 }, {}, {})}</article>` : ``}</section>
+			<section class="${"section-2 svelte-p5hk3g"}">${offset > -0.01 && index == 1 ? `<article class="${"svelte-p5hk3g"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 1 }, {}, {})}</article>` : ``}</section>
+			<section class="${"section-3 svelte-p5hk3g"}">${offset > -0.01 && index == 2 ? `<article class="${"svelte-p5hk3g"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 2 }, {}, {})}</article>` : ``}</section></div>`;
       }
     })}
-
-	
 </div>`;
   } while (!$$settled);
   return $$rendered;

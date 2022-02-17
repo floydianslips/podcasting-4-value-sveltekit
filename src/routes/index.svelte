@@ -4,8 +4,6 @@
 	import SingleBlogPost from '$lib/components/SingleBlogPost.svelte';
 	import PodcastPlayer from '$lib/components/PodcastPlayer.svelte';
 	import { siteDescription } from '$lib/config';
-	// import PodcastPlayer-2 from '$lib/components/PodcastPlayer-2.svelte';
-
 	let count;
 	let index;
 	let offset;
@@ -24,7 +22,6 @@
 <div class="main-div">
 	<h1>One idiot's attempt at starting a Value 4 Value podcast.</h1>
 	<PodcastPlayer />
-	<!-- <PodcastPlayer-2 /> -->
 
 	<Scroller {top} {threshold} {bottom} bind:count bind:index bind:offset bind:progress>
 		<div class="scroller-div" slot="foreground">
@@ -57,10 +54,13 @@
 	.main-div {
 		display: grid;
 		justify-items: center;
+		/* z-index: -1; */
 	}
+
 	h1 {
 		font-size: 1.5rem;
 		text-align: center;
+		margin: 0 0 1rem 0;
 	}
 	[slot='foreground'] section {
 		pointer-events: all;
@@ -86,14 +86,11 @@
 		border: 3px solid #f1f1f1;
 		height: fit-content;
 		overflow-y: hidden;
-		/* position: absolute; */
-		/* top: 50%; */
-		/* left: 50%; */
-		/* transform: translate(-50%, -50%); */
-		/* z-index: 2; */
-		/* width: 80%; */
 		padding: 20px;
 		text-align: center;
+	}
+	.scroller-div {
+		z-index: 1;
 	}
 	section {
 		display: grid;

@@ -1,0 +1,34 @@
+.donation-table tr {
+	text-align: center;
+	font-size: 1rem;
+	padding: 0px;
+}
+.donation-table img {
+	width: 2rem;
+	height: auto;
+	padding: 2px;
+	align-self: center;
+}
+.donation-table th {
+	text-align: center;
+	width: auto;
+}
+
+.donation-table table,
+th,
+td {
+	border: 1px solid;
+	width: auto;
+}
+.donation-table td {
+	word-wrap: break-word;
+}
+.donation-table {
+	// width: 100%;
+	table-layout: fixed;
+}
+
+.qr-code img {
+	width: 5rem;
+	height: auto;
+}

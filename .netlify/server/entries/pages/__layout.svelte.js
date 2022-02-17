@@ -1,5 +1,5 @@
-import { n as noop, a as safe_not_equal, c as create_ssr_component, b as subscribe, d as add_attribute, e as add_classes, v as validate_component, f as each, g as escape } from "../../chunks/index-44b51311.js";
-import { n as navItems, s as siteTitle, d as siteAuthor } from "../../chunks/config-52afe4d0.js";
+import { n as noop, a as safe_not_equal, c as create_ssr_component, b as subscribe, d as add_attribute, e as add_classes, v as validate_component, f as each, g as escape } from "../../chunks/index-4fee9b32.js";
+import { n as navItems, s as siteTitle, d as siteAuthor } from "../../chunks/config-b9ab5e02.js";
 var global = "";
 const subscriber_queue = [];
 function writable(value, start = noop) {
@@ -69,8 +69,8 @@ const HamburgerMenuButton = create_ssr_component(($$result, $$props, $$bindings,
   if ($$props.closeOnly === void 0 && $$bindings.closeOnly && closeOnly !== void 0)
     $$bindings.closeOnly(closeOnly);
   $$unsubscribe_isMenuOpen();
-  return `<button${add_attribute("aria-pressed", $isMenuOpen, 0)} class="${"menu-button"}"${add_attribute("tabindex", $isMenuOpen || !closeOnly ? "0" : "-1", 0)}><span class="${"sr-only"}">Toggle hamburger menu</span>
-  ${closeOnly ? `${validate_component(XSVG, "XSVG").$$render($$result, {}, {}, {})}` : `${validate_component(HamburgerSVG, "HamburgerSVG").$$render($$result, {}, {}, {})}`}</button>`;
+  return `<button${add_attribute("aria-pressed", $isMenuOpen, 0)} class="${"menu-button"}"${add_attribute("tabindex", $isMenuOpen || !closeOnly ? "10" : "-1", 0)}><span class="${"sr-only"}">Toggle hamburger menu</span>
+	${closeOnly ? `${validate_component(XSVG, "XSVG").$$render($$result, {}, {}, {})}` : `${validate_component(HamburgerSVG, "HamburgerSVG").$$render($$result, {}, {}, {})}`}</button>`;
 });
 const MainNav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $isMenuOpen, $$unsubscribe_isMenuOpen;
@@ -81,26 +81,23 @@ const MainNav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     return `${validate_component(NavItem, "NavItem").$$render($$result, { href: page.route }, {}, {
       default: () => {
         return `${escape(page.title)}
-    `;
+			`;
       }
     })}`;
   })}</ul>
-  ${validate_component(HamburgerMenuButton, "HamburgerMenuButton").$$render($$result, { closeOnly: "true" }, {}, {})}</nav>`;
+	${validate_component(HamburgerMenuButton, "HamburgerMenuButton").$$render($$result, { closeOnly: "true" }, {}, {})}</nav>`;
 });
 const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<header><a class="${"skip-to-content-link"}" href="${"#main"}">Skip to main content
-  </a>
-  
-  <a href="${"/"}" class="${"site-title"}">${escape(siteTitle)}</a>
-  
-  ${validate_component(HamburgerMenuButton, "HamburgerMenuButton").$$render($$result, {}, {}, {})}
-  ${validate_component(MainNav, "MainNav").$$render($$result, {}, {}, {})}</header>`;
+	</a>
+
+	<a href="${"/"}" class="${"site-title"}">${escape(siteTitle)}</a>
+
+	${validate_component(HamburgerMenuButton, "HamburgerMenuButton").$$render($$result, {}, {}, {})}
+	${validate_component(MainNav, "MainNav").$$render($$result, {}, {}, {})}</header>`;
 });
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<footer>${validate_component(MainNav, "MainNav").$$render($$result, {}, {}, {})}
-
-	<nav><ul>
-			<li><a href="${"/"}">Home</a></li></ul></nav>
 
 	<p>\xA9${escape(new Date().getFullYear())} ${escape(siteAuthor)}</p></footer>`;
 });

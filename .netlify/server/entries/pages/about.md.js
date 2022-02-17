@@ -1,4 +1,4 @@
-import { c as create_ssr_component } from "../../chunks/index-44b51311.js";
+import { c as create_ssr_component } from "../../chunks/index-4fee9b32.js";
 const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<h1 id="${"about"}"><a aria-hidden="${"true"}" tabindex="${"-1"}" href="${"#about"}"><span class="${"icon icon-link"}"></span></a>About</h1>
 <p>This is an example of how you can have <em>markdown</em> in page content!</p>

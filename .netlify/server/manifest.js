@@ -1,9 +1,9 @@
 export const manifest = {
 	appDir: "_app",
-	assets: new Set(["admin/config.yml","admin/index.html","favicon.png","images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg","images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg","images/linus-nylund-Q5QspluNZmM-unsplash.jpg","link.svg"]),
+	assets: new Set(["admin/config.yml","admin/index.html","favicon.png","images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg","images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg","images/laptop-microphone.jpg","images/linus-nylund-Q5QspluNZmM-unsplash.jpg","images/mixer.jpg","images/pexels-uzunov-rostislav-5011647.jpg","images/sat-dish.jpg","link.svg","uploads/.gitkeep","uploads/podcasting4value-lg.png"]),
 	_: {
 		mime: {".yml":"text/yaml",".html":"text/html",".png":"image/png",".jpg":"image/jpeg",".svg":"image/svg+xml"},
-		entry: {"file":"start-d2916634.js","js":["start-d2916634.js","chunks/vendor-0cc4a8ec.js","chunks/preload-helper-ec9aa979.js","chunks/singletons-d19c42e4.js"],"css":["assets/vendor-d007c09e.css"]},
+		entry: {"file":"start-b6ce8ecd.js","js":["start-b6ce8ecd.js","chunks/vendor-48ac5387.js","chunks/preload-helper-ec9aa979.js","chunks/singletons-d19c42e4.js"],"css":["assets/vendor-bb155fe5.css"]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -18,7 +18,8 @@ export const manifest = {
 			() => import('./nodes/10.js'),
 			() => import('./nodes/11.js'),
 			() => import('./nodes/12.js'),
-			() => import('./nodes/13.js')
+			() => import('./nodes/13.js'),
+			() => import('./nodes/14.js')
 		],
 		routes: [
 			{
@@ -41,11 +42,20 @@ export const manifest = {
 			},
 			{
 				type: 'page',
+				pattern: /^\/donate\/?$/,
+				params: null,
+				path: "/donate",
+				shadow: null,
+				a: [0,4],
+				b: [1]
+			},
+			{
+				type: 'page',
 				pattern: /^\/about\/?$/,
 				params: null,
 				path: "/about",
 				shadow: null,
-				a: [0,4],
+				a: [0,5],
 				b: [1]
 			},
 			{
@@ -54,7 +64,7 @@ export const manifest = {
 				params: null,
 				path: "/blog",
 				shadow: null,
-				a: [0,5],
+				a: [0,6],
 				b: [1]
 			},
 			{
@@ -63,7 +73,7 @@ export const manifest = {
 				params: null,
 				path: "/blog/category",
 				shadow: null,
-				a: [0,6],
+				a: [0,7],
 				b: [1]
 			},
 			{
@@ -72,7 +82,7 @@ export const manifest = {
 				params: (m) => ({ page: m[1]}),
 				path: null,
 				shadow: null,
-				a: [0,7],
+				a: [0,8],
 				b: [1]
 			},
 			{
@@ -81,7 +91,7 @@ export const manifest = {
 				params: (m) => ({ category: m[1]}),
 				path: null,
 				shadow: null,
-				a: [0,8],
+				a: [0,9],
 				b: [1]
 			},
 			{
@@ -90,7 +100,7 @@ export const manifest = {
 				params: (m) => ({ category: m[1]}),
 				path: null,
 				shadow: null,
-				a: [0,9],
+				a: [0,10],
 				b: [1]
 			},
 			{
@@ -99,7 +109,7 @@ export const manifest = {
 				params: (m) => ({ category: m[1], page: m[2]}),
 				path: null,
 				shadow: null,
-				a: [0,10],
+				a: [0,11],
 				b: [1]
 			},
 			{
@@ -108,7 +118,7 @@ export const manifest = {
 				params: null,
 				path: "/blog/page",
 				shadow: null,
-				a: [0,11],
+				a: [0,12],
 				b: [1]
 			},
 			{
@@ -117,7 +127,7 @@ export const manifest = {
 				params: (m) => ({ page: m[1]}),
 				path: null,
 				shadow: null,
-				a: [0,12],
+				a: [0,13],
 				b: [1]
 			},
 			{
@@ -126,7 +136,7 @@ export const manifest = {
 				params: (m) => ({ post: m[1]}),
 				path: null,
 				shadow: null,
-				a: [0,13],
+				a: [0,14],
 				b: [1]
 			},
 			{
