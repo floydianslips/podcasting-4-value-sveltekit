@@ -69,13 +69,13 @@
 		width: 100%;
 	}
 	.section-1 {
-		background-image: url('../images/laptop-microphone.jpg');
+		background-image: url('$lib/assets/images/laptop-microphone.jpg');
 	}
 	.section-2 {
-		background-image: url('../images/sat-dish.jpg');
+		background-image: url('$lib/assets/images/sat-dish.jpg');
 	}
 	.section-3 {
-		background-image: url('../images/mixer.jpg');
+		background-image: url('$lib/assets/images/mixer.jpg');
 	}
 	article {
 		display: grid;
