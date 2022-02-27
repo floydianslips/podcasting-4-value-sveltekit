@@ -1,5 +1,5 @@
-import { p as postsPerPage } from "../../../../chunks/config-b9ab5e02.js";
-import { f as fetchPosts } from "../../../../chunks/fetchPosts-e9d9b191.js";
+import { p as postsPerPage } from "../../../../chunks/config-702cd8c2.js";
+import { f as fetchPosts } from "../../../../chunks/fetchPosts-01a20bea.js";
 const get = async ({ url }) => {
   try {
     const params = new URLSearchParams(url.search);

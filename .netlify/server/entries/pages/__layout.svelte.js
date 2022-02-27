@@ -1,5 +1,5 @@
 import { n as noop, a as safe_not_equal, c as create_ssr_component, b as subscribe, d as add_attribute, e as add_classes, v as validate_component, f as each, g as escape } from "../../chunks/index-4fee9b32.js";
-import { n as navItems, s as siteTitle, d as siteAuthor } from "../../chunks/config-b9ab5e02.js";
+import { n as navItems, s as siteTitle, d as siteAuthor } from "../../chunks/config-702cd8c2.js";
 var global = "";
 const subscriber_queue = [];
 function writable(value, start = noop) {

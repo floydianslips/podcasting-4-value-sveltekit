@@ -1,7 +1,7 @@
 import { c as create_ssr_component, g as escape, v as validate_component } from "../../../../../chunks/index-4fee9b32.js";
-import { f as fetchPosts } from "../../../../../chunks/fetchPosts-e9d9b191.js";
-import { P as PostsList, a as Pagination } from "../../../../../chunks/Pagination-f466479a.js";
-import "../../../../../chunks/config-b9ab5e02.js";
+import { f as fetchPosts } from "../../../../../chunks/fetchPosts-01a20bea.js";
+import { P as PostsList, a as Pagination } from "../../../../../chunks/Pagination-c5dabe92.js";
+import "../../../../../chunks/config-702cd8c2.js";
 const load = async ({ params, fetch }) => {
   const category = params.category;
   const options = { category };

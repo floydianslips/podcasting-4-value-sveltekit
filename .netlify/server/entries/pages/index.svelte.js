@@ -1,5 +1,5 @@
 import { c as create_ssr_component, d as add_attribute, g as escape, v as validate_component } from "../../chunks/index-4fee9b32.js";
-import { a as siteDescription } from "../../chunks/config-b9ab5e02.js";
+import { a as siteDescription } from "../../chunks/config-702cd8c2.js";
 var Scroller_svelte_svelte_type_style_lang = "";
 const css$3 = {
   code: "svelte-scroller-outer.svelte-xdbafy{display:block;position:relative}svelte-scroller-background.svelte-xdbafy{display:block;position:relative;width:100%}svelte-scroller-foreground.svelte-xdbafy{display:block;position:relative;z-index:2}svelte-scroller-foreground.svelte-xdbafy::after{content:' ';display:block;clear:both}svelte-scroller-background-container.svelte-xdbafy{display:block;position:absolute;width:100%;max-width:100%;pointer-events:none;will-change:transform}",
@@ -112,7 +112,7 @@ const PodcastPlayer = create_ssr_component(($$result, $$props, $$bindings, slots
 });
 var index_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".main-div.svelte-p5hk3g.svelte-p5hk3g{display:grid;justify-items:center}h1.svelte-p5hk3g.svelte-p5hk3g{font-size:1.5rem;text-align:center;margin:0 0 1rem 0}[slot='foreground'].svelte-p5hk3g section.svelte-p5hk3g{pointer-events:all}.scroller-div.svelte-p5hk3g.svelte-p5hk3g{width:100%}.section-1.svelte-p5hk3g.svelte-p5hk3g{background-image:url('../images/laptop-microphone.jpg')}.section-2.svelte-p5hk3g.svelte-p5hk3g{background-image:url('../images/sat-dish.jpg')}.section-3.svelte-p5hk3g.svelte-p5hk3g{background-image:url('../images/mixer.jpg')}article.svelte-p5hk3g.svelte-p5hk3g{display:grid;background-color:rgb(0, 0, 0);background-color:rgba(0, 0, 0, 0.8);color:white;font-weight:bold;border:3px solid #f1f1f1;height:fit-content;overflow-y:hidden;padding:20px;text-align:center}.scroller-div.svelte-p5hk3g.svelte-p5hk3g{z-index:1}section.svelte-p5hk3g.svelte-p5hk3g{display:grid;width:100%;align-items:center;height:40vh;background-color:var(--darkBlue);color:white;padding:1em;background-size:cover;background-position:center;overflow-x:hidden;color:white;font-weight:bold;border:3px solid #f1f1f1;padding:20px;text-align:center}",
+  code: ".main-div.svelte-1nk1ps7.svelte-1nk1ps7{display:grid;justify-items:center}h1.svelte-1nk1ps7.svelte-1nk1ps7{font-size:1.5rem;text-align:center;margin:0 0 1rem 0}[slot='foreground'].svelte-1nk1ps7 section.svelte-1nk1ps7{pointer-events:all}.scroller-div.svelte-1nk1ps7.svelte-1nk1ps7{width:100%}.section-1.svelte-1nk1ps7.svelte-1nk1ps7{background-image:url('$lib/assets/images/laptop-microphone.jpg')}.section-2.svelte-1nk1ps7.svelte-1nk1ps7{background-image:url('$lib/assets/images/sat-dish.jpg')}.section-3.svelte-1nk1ps7.svelte-1nk1ps7{background-image:url('$lib/assets/images/mixer.jpg')}article.svelte-1nk1ps7.svelte-1nk1ps7{display:grid;background-color:rgb(0, 0, 0);background-color:rgba(0, 0, 0, 0.8);color:white;font-weight:bold;border:3px solid #f1f1f1;height:fit-content;overflow-y:hidden;padding:20px;text-align:center}.scroller-div.svelte-1nk1ps7.svelte-1nk1ps7{z-index:1}section.svelte-1nk1ps7.svelte-1nk1ps7{display:grid;width:100%;align-items:center;height:40vh;background-color:var(--darkBlue);color:white;padding:1em;background-size:cover;background-position:center;overflow-x:hidden;color:white;font-weight:bold;border:3px solid #f1f1f1;padding:20px;text-align:center}",
   map: null
 };
 let top = 0.1;
@@ -130,7 +130,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$settled = true;
     $$rendered = `${$$result.head += `${$$result.title = `<title>Home</title>`, ""}<meta data-key="${"description"}" name="${"description"}"${add_attribute("content", siteDescription, 0)} data-svelte="svelte-129ocvh"><script src="${"https://identity.netlify.com/v1/netlify-identity-widget.js"}" data-svelte="svelte-129ocvh"><\/script>`, ""}
 
-<div class="${"main-div svelte-p5hk3g"}"><h1 class="${"svelte-p5hk3g"}">One idiot&#39;s attempt at starting a Value 4 Value podcast.</h1>
+<div class="${"main-div svelte-1nk1ps7"}"><h1 class="${"svelte-1nk1ps7"}">One idiot&#39;s attempt at starting a Value 4 Value podcast.</h1>
 	${validate_component(PodcastPlayer, "PodcastPlayer").$$render($$result, {}, {}, {})}
 
 	${validate_component(Scroller, "Scroller").$$render($$result, {
@@ -160,9 +160,9 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       }
     }, {
       foreground: () => {
-        return `<div class="${"scroller-div svelte-p5hk3g"}" slot="${"foreground"}"><section class="${"section-1 svelte-p5hk3g"}">${offset > -0.01 && index == 0 ? `<article class="${"svelte-p5hk3g"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 0 }, {}, {})}</article>` : ``}</section>
-			<section class="${"section-2 svelte-p5hk3g"}">${offset > -0.01 && index == 1 ? `<article class="${"svelte-p5hk3g"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 1 }, {}, {})}</article>` : ``}</section>
-			<section class="${"section-3 svelte-p5hk3g"}">${offset > -0.01 && index == 2 ? `<article class="${"svelte-p5hk3g"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 2 }, {}, {})}</article>` : ``}</section></div>`;
+        return `<div class="${"scroller-div svelte-1nk1ps7"}" slot="${"foreground"}"><section class="${"section-1 svelte-1nk1ps7"}">${offset > -0.01 && index == 0 ? `<article class="${"svelte-1nk1ps7"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 0 }, {}, {})}</article>` : ``}</section>
+			<section class="${"section-2 svelte-1nk1ps7"}">${offset > -0.01 && index == 1 ? `<article class="${"svelte-1nk1ps7"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 1 }, {}, {})}</article>` : ``}</section>
+			<section class="${"section-3 svelte-1nk1ps7"}">${offset > -0.01 && index == 2 ? `<article class="${"svelte-1nk1ps7"}">${validate_component(SingleBlogPost, "SingleBlogPost").$$render($$result, { index: 2 }, {}, {})}</article>` : ``}</section></div>`;
       }
     })}
 </div>`;

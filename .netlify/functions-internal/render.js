@@ -2,10 +2,10 @@ import { init } from '../handler.js';
 
 export const handler = init({
 	appDir: "_app",
-	assets: new Set(["admin/config.yml","admin/index.html","favicon.png","images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg","images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg","images/laptop-microphone.jpg","images/linus-nylund-Q5QspluNZmM-unsplash.jpg","images/mixer.jpg","images/pexels-uzunov-rostislav-5011647.jpg","images/sat-dish.jpg","link.svg","uploads/.gitkeep","uploads/podcasting4value-lg.png"]),
+	assets: new Set(["admin/config.yml","admin/index.html","favicon.png","favicon1.png","images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg","images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg","images/linus-nylund-Q5QspluNZmM-unsplash.jpg","link.svg","uploads/.gitkeep","uploads/podcasting4value-lg.png"]),
 	_: {
 		mime: {".yml":"text/yaml",".html":"text/html",".png":"image/png",".jpg":"image/jpeg",".svg":"image/svg+xml"},
-		entry: {"file":"start-b6ce8ecd.js","js":["start-b6ce8ecd.js","chunks/vendor-48ac5387.js","chunks/preload-helper-ec9aa979.js","chunks/singletons-d19c42e4.js"],"css":["assets/vendor-bb155fe5.css"]},
+		entry: {"file":"start-d88d07b6.js","js":["start-d88d07b6.js","chunks/vendor-48ac5387.js","chunks/preload-helper-ec9aa979.js","chunks/singletons-d19c42e4.js"],"css":["assets/vendor-bb155fe5.css"]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),

@@ -1,6 +1,6 @@
 import { c as create_ssr_component, d as add_attribute, v as validate_component } from "../../../chunks/index-4fee9b32.js";
-import { P as PostsList, a as Pagination } from "../../../chunks/Pagination-f466479a.js";
-import { a as siteDescription } from "../../../chunks/config-b9ab5e02.js";
+import { P as PostsList, a as Pagination } from "../../../chunks/Pagination-c5dabe92.js";
+import { a as siteDescription } from "../../../chunks/config-702cd8c2.js";
 const load = async ({ fetch }) => {
   const postRes = await fetch(`/api/posts.json`);
   const { posts } = await postRes.json();

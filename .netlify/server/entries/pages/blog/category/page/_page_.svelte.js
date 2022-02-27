@@ -1,7 +1,7 @@
 import { c as create_ssr_component, g as escape, d as add_attribute, v as validate_component } from "../../../../../chunks/index-4fee9b32.js";
-import { f as fetchPosts } from "../../../../../chunks/fetchPosts-e9d9b191.js";
-import { p as postsPerPage, a as siteDescription } from "../../../../../chunks/config-b9ab5e02.js";
-import { a as Pagination, P as PostsList } from "../../../../../chunks/Pagination-f466479a.js";
+import { f as fetchPosts } from "../../../../../chunks/fetchPosts-01a20bea.js";
+import { p as postsPerPage, a as siteDescription } from "../../../../../chunks/config-702cd8c2.js";
+import { a as Pagination, P as PostsList } from "../../../../../chunks/Pagination-c5dabe92.js";
 const load = async ({ fetch, params }) => {
   try {
     const page = params.page ? params.page : 1;
