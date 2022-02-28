@@ -7,6 +7,19 @@
 	};
 	let selected;
 	let answer = '';
+	import CopyToClipBoard from '$lib/components/CopyToClipboard.svelte';
+	
+	let name;
+
+	const copy = (wallet) => {
+		console.log(wallet)
+		const app = new CopyToClipBoard({
+			target: document.getElementById('clipboard'),
+			props: {wallet},
+		});
+		app.$destroy();
+	}
+	
 </script>
 
 <h1>Cryptocurrency</h1>
@@ -24,6 +37,12 @@
 				</select>
 				{#if selected}
 					<span>{selected.wallet}</span>
+				<div class="copy">
+					<input disabled bind:value={selected.wallet}>
+					<button on:click={copy(selected.wallet)}>copy</button>
+					<div id="clipboard"></div>
+				</div>
+
 				{/if}
 			</td><td>
 				{#if selected}
@@ -39,6 +58,20 @@
 </table>
 
 <style>
+	.copy {
+		display: grid;
+		justify-items: center;
+	}
+		button {
+			background: var(--green);
+		}
+		button:hover {
+			background: var(--darkBlue);
+		}
+
+	input {
+		display: none
+	}
 	select {
 		width: fit-content;
 		padding: 10px 15px;
